@@ -9,24 +9,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <style>
+               html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+        </style>
 </head>
 
 <body>
     <div class="hero">
-        <nav>
-            <img src="./images/Portfolio Logo.jpg" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>
-            </ul>
+
+
+        <!-- Navbar Section -->
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: eff4fd;">
+            <div class="container-fluid">
+                <img src="./images/Portfolio Logo.jpg" class="logo">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navitem collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="#"><b>HOME</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>ABOUT</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>SKILLS</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>WORKS</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>HIRE ME</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+
+        <!-- Home Section -->
+
         <div class="detel">
-            <h1>I'm <span>Revathy Sabu</span></h1>
-            <p>This is my official portfolio website to show all
-                <br> Details and work experience web development
+            <h1><b>I'm <span>Revathy Sabu</span></b></h1>
+            <p>Welcome to my Portfolio,
+                <br> A digital canvas where my passion, <br> creativity, and skills converge to tell a unique story.
             </p>
             <a href="#">DOWNLOAD CV</a>
         </div>
@@ -36,50 +78,140 @@
         </div>
     </div>
 
-    <!-- About Section Start -->
+
+    <!-- About Section -->
+
     <section class="about">
         <div class="main">
             <img src="./images/my-photo.jpeg">
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& Designer</span></h5>
-                <p>I am a full stack web developer, I can provide clean code and pixel perfect design. I also make the
-                    website more and more interactive with web animations.</p>
+                <p>I am a full-stack web developer, skilled in both front-end and back-end technologies. I design
+                    user-friendly interfaces, create robust server-side solutions, and bring ideas to life. My goal is
+                    to seamlessly connect design and functionality to build engaging web applications.</p>
                 <button type="button">Let's Talk</button>
             </div>
         </div>
     </section>
 
-    <!-- Service Section Start -->
+
+    <!-- Skills Section -->
+
     <div class="service">
         <div class="title">
-            <h2>Our Services</h2>
+            <h2>Skills</h2>
         </div>
-        <div class="box">
-            <div class="card">
-                <i class="fa-solid fa-bars"></i>
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>qert[poissdf;lkhgzfghiop[utrer7oiuyfdfgh</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Html</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Css</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Javascript</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-angular"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Angular</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">React</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-solid fa-database"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">MongoDB</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cols">
+                <div class="cards">
+                    <i class="fa-brands fa-node"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">NodeJS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+
+    <!-- Works Section -->
+
+    <div class="service">
+        <div class="title">
+            <h2>Previous Works</h2>
+        </div>
+        <div class="box col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <img src="./images/book-gallery.png" alt="">
+                <h5>Book Gallery</h5>
+                <div class="pra">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam reiciendis quia at cupiditate
+                        accusantium sapiente. Unde molestias neque exercitationem nihil quos excepturi vel vero</p>
                     <p style="text-align: center;"><a class="button" href="#">Read More</a></p>
                 </div>
             </div>
+        </div>
+        <div class="box col-12 col-md-6 col-lg-4">
             <div class="card">
-                <i class="fa-regular fa-user"></i>
-                <h5>Web Development</h5>
+                <!-- <i class="fa-regular fa-user"></i> -->
+                <img src="./images/movie-gallery.png" alt="">
+                <h5>Movie Gallery</h5>
                 <div class="pra">
-                    <p>qert[poissdf;lkhgzfghiop[utrer7oiuyfdfgh</p>
-
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas vitae dolor quisquam
+                        provident, officiis, recusandae ad dolore labore tempore ut beatae blanditiis quae id, magni
+                        corporis commodi officia quis!</p>
                     <p style="text-align: center;"><a class="button" href="#">Read More</a></p>
                 </div>
             </div>
+        </div>
+        <div class="box col-12 col-md-6 col-lg-4">
             <div class="card">
-                <i class="fa-regular fa-bell"></i>
-                <h5>Web Development</h5>
+                <!-- <i class="fa-regular fa-bell"></i> -->
+                <img src="./images/food-gallery.png" alt="">
+                <h5>Food Gallery</h5>
                 <div class="pra">
-                    <p>qert[poissdf;lkhgzfghiop[utrer7oiuyfdfgh</p>
-
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque inventore reiciendis facere
+                        illum amet magnam commodi reprehenderit, nulla, voluptas velit nobis eligendi, quis molestias
+                    </p>
                     <p style="text-align: center;"><a class="button" href="#">Read More</a></p>
                 </div>
             </div>
@@ -87,17 +219,18 @@
     </div>
 
 
-    <!-- Hire Me -->
+    <!-- HireMe Section -->
+
     <div class="hire-me">
         <p>Let Me Get You A Beautiful Website</p>
         <a class="button-two" href="#">Hire Me</a>
     </div>
 
 
-    <!-- Footer Start -->
+    <!-- Footer Section -->
     <footer>
         <p>Revathy Sabu</p>
-        <p>dfjhhoiuduiohgcvkbvkhghhv</p>
+        <p>Portfolio</p>
         <div class="social">
             <a href="#"><i class="fa-regular fa-envelope"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
